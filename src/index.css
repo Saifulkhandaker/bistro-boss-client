@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.featured-item{
+    background-image: url('./assets/home//featured.jpg');
+}
+.bg-login{
+    background-image: url('/src//assets//others/authentication.png');
+    height: max-content;
+}
