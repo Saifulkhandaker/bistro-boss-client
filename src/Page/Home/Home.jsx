@@ -13,9 +13,11 @@ const Home = () => {
         <title>Bistro Boss | Home</title>
       </Helmet>
       <Banner></Banner>
-      <Category></Category>
-      <Chef></Chef>
-      <PopularMenu></PopularMenu>
+      <div className="w-[90%] mx-auto">
+        <Category></Category>
+        <Chef></Chef>
+        <PopularMenu></PopularMenu>
+      </div>
       <Featured></Featured>
       <Testimonials></Testimonials>
     </div>
