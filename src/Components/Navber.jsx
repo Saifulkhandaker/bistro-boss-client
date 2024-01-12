@@ -45,7 +45,7 @@ const Navber = () => {
         {navlinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">BISTRO BOSS <br /> RESTAURANT</a>
+    <h3 className="lg:pl-4 text-xl">BISTRO BOSS <br /> <span className="font-serif text-lg">RESTAURANT</span></h3>
   </div>
   
   <div className="navbar-end gap-2">
