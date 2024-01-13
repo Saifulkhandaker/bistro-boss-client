@@ -3,9 +3,30 @@ import Cover from "../Shared/Cover/Cover";
 import contactimg from "../../assets/contact/banner.jpg"
 import SectionTitle from "../../Components/SectionTitle";
 import { FaClock, FaLocationDot, FaPhoneVolume } from "react-icons/fa6";
+import { IoIosSend } from "react-icons/io";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 
 const Contact = () => {
+
+
+    const formRef = useRef();
+
+    const handlemessage = (e) => {
+        e.preventDefault();
+        Swal.fire({
+        position: "top-center",
+        icon: "success",
+        title: "Message Sent Successfully..!",
+        showConfirmButton: false,
+        timer: 1500
+        });
+        
+        // Reset the form
+        formRef.current.reset();
+    }
+
     return (
         <div>
             <Helmet>
@@ -39,6 +60,53 @@ const Contact = () => {
                     </div>
                     
                 </div>
+                <SectionTitle subHeading={"Send Us a Message"} heading={"CONTACT FORM"}></SectionTitle>
+                {/* contact form */}
+                    <form onSubmit={handlemessage} ref={formRef} className="bg-white border px-4 py-5 mt-12 mb-20">
+                        <div className="flex gap-5">
+                            <input
+                            type="text"
+                            required
+                            placeholder="Enter Name"
+                            className=" w-full bg-[#F4F5F8] px-10 py-7 input  rounded-none"
+                            />
+                            <input
+                            type="email"
+                            required
+                            placeholder="Enter Email"
+                            className=" w-full bg-[#F4F5F8] px-10 py-7 input  rounded-none"
+                            />
+                        </div>
+                        <div className="flex gap-5 mt-5">
+                            <input
+                            type="text"
+                            required
+                            placeholder="Enter Subject"
+                            className=" w-full bg-[#F4F5F8] px-10 py-7 input  rounded-none"
+                            />
+                            <input
+                            type="number"
+                            placeholder="Enter Phone"
+                            required
+                            className=" w-full bg-[#F4F5F8] px-10 py-7 input  rounded-none"
+                            />
+                        </div>
+                        <div className="mt-5">
+                            <textarea
+                            required
+                            className="bg-[#F4F5F8] w-full px-10 py-7"
+                            placeholder="Enter Message"
+                            name=""
+                            id=""
+                            rows="5"
+                            ></textarea>
+                        </div>
+                        <div className="mt-4 flex justify-center items-center">
+                            <button className="py-4 px-5 rounded-none flex items-center text-center gap-2 text-xl text-white bg-[#c79953] ">
+                             Send Message <IoIosSend />
+                            </button>
+                        </div>
+                    </form>
             </div>
             
         </div>
