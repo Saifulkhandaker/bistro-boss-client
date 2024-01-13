@@ -23,6 +23,7 @@ const Navber = () => {
     <li className="text-sm"> <NavLink to="/">HOME</NavLink></li>   
     <li className="text-sm"> <NavLink to="/menu">OUR MENU</NavLink></li>   
     <li className="text-sm"> <NavLink to="/order/salad">ORDER FOOD</NavLink></li>
+    <li className="text-sm"> <NavLink to="/contact">CONTACT US</NavLink></li>
     <li className="text-2xl text-white text-center items-center">
        <NavLink to="/dashboard/cart">
        <button className="flex gap-2">

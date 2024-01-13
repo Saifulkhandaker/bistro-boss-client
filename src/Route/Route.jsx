@@ -15,6 +15,7 @@ import ManageItems from "../Page/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../Page/Dashboard/UpdateItem/UpdateItem";
 import Payment from "../Page/Dashboard/Payment/Payment";
 import PaymentHistory from "../Page/Dashboard/PaymentHistory/PaymentHistory";
+import Contact from "../Page/Contact/Contact";
 
 
 const Route = createBrowserRouter([
@@ -33,6 +34,10 @@ const Route = createBrowserRouter([
             {
                 path: "/order/:category",
                 element: <Order></Order>
+            },
+            {
+                path: "/contact",
+                element: <Contact></Contact>
             },
             {
                 path: '/login',
