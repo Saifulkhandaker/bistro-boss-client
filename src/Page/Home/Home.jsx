@@ -5,6 +5,7 @@ import Chef from "../../Components/Chef";
 import Featured from "../../Components/Featured";
 import PopularMenu from "../../Components/PopularMenu";
 import Testimonials from "../../Components/Testimonials";
+import Number from "../../Components/Number";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Category></Category>
         <Chef></Chef>
         <PopularMenu></PopularMenu>
+        <Number></Number>
       </div>
       <Featured></Featured>
       <Testimonials></Testimonials>
