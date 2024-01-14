@@ -16,6 +16,7 @@ import UpdateItem from "../Page/Dashboard/UpdateItem/UpdateItem";
 import Payment from "../Page/Dashboard/Payment/Payment";
 import PaymentHistory from "../Page/Dashboard/PaymentHistory/PaymentHistory";
 import Contact from "../Page/Contact/Contact";
+import UserHome from "../Page/UserHome/UserHome";
 
 
 const Route = createBrowserRouter([
@@ -60,6 +61,10 @@ const Route = createBrowserRouter([
             {
                 path: "cart",
                 element: <Cart></Cart>
+            },
+            {
+                path: "userHome",
+                element: <UserHome></UserHome>
             },
             {
                 path: "payment",

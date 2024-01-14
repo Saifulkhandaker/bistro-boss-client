@@ -60,19 +60,9 @@ const Dashboard = () => {
                             User Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/dashboard/reservation">
-                        <FaCalendarAlt></FaCalendarAlt>
-                            Reservation</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/dashboard/cart">
                         <FaShoppingCart></FaShoppingCart>
                             My Cart({cart.length})</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/dashboard/review">
-                        <MdReviews></MdReviews>
-                            Add Review</NavLink>
                     </li>
                     <li>
                         <NavLink to="/dashboard/paymentHistory">
