@@ -17,12 +17,14 @@ import Payment from "../Page/Dashboard/Payment/Payment";
 import PaymentHistory from "../Page/Dashboard/PaymentHistory/PaymentHistory";
 import Contact from "../Page/Contact/Contact";
 import UserHome from "../Page/UserHome/UserHome";
+import Error from "../Page/Error/Error";
 
 
 const Route = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: "/",
